@@ -7,9 +7,13 @@
 //
 
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    char * a;
+    
+    a = strerror(34);
+    printf("Hello, World!\n%s\n", a);
+    perror(a);
     return 0;
 }
