@@ -13,6 +13,8 @@
 #include <sys/stat.h>
 #include <sys/termios.h>
 #include <sys/ioctl.h>
+#include <unistd.h>
+#include <fcntl.h>
 
 void errorSay(char* s);
 
