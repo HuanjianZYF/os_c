@@ -14,12 +14,14 @@ void getPermissionStr(char* folderName, char* result); //获取文件权限字�
 int isPermissionBitSet(mode_t mode, mode_t bit); //判断某一个权限位是否被设置
 
 int main() {
-    char block[10]; //暂时忘记malloc了..囧
+    char block[10];
     char *fileType, *permissionStr = block;
     long fileSize;
     int fd;
-    struct stat buffer;
+    struct stat buffer; //文件状态
     mode_t mode;
+    long atime, mtime, ctime;
+//    struct timespec time[2]; //用于保存时间
     
     fileType = getFileType("/dev/tty");
     fileSize = getFileSize("/Users/zyf/Documents/url修改.numbers");
@@ -35,9 +37,24 @@ int main() {
     
     fchmod(fd, (mode & ~S_IWUSR) | S_IWGRP); //修改文件权限本人不能写，组能执行
     getPermissionStr("/Users/zyf/Documents/test", permissionStr); //拿到该文件的权限字符串
+
+    atime = buffer.st_atimespec.tv_sec;
+    mtime = buffer.st_mtimespec.tv_sec;
+    ctime = buffer.st_ctimespec.tv_sec;
     
     unlink("/Users/zyf/Documents/test"); //取消该文件的连接
-    printf("该文件类型：%s\n文件大小：%ld\n文件权限：%s\n", fileType, fileSize, permissionStr);
+    
+    mkdir("/Users/zyf/Documents/zyfff", S_IRUSR|S_IWUSR|S_IXUSR); //创建一个目录
+
+//    //将该文件的atime和mtime改成当前时间
+//    fd = open("/Users/zyf/Documents/a.json", O_RDONLY); //再打开一个文件
+//    time[0].tv_nsec = UTIME_NOW;
+//    time[1].tv_nsec = UTIME_NOW;
+//    if (futimens(fd, time) < 0) {
+//        errorSay("修改时间出问题");
+//    }
+    
+    printf("该文件类型：%s\n文件大小：%ld\n文件权限：%s\natime：%ld\nmtime：%ld\nctime：%ld\n", fileType, fileSize, permissionStr, atime, mtime, ctime);
 }
 
 char* getFileType(char* folderName) {
