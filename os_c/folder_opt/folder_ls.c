@@ -11,7 +11,13 @@
 void printFolder(char* folderName, int level); //打印该目录下一层的所有目录，如果是文件则return
 
 int main() {
+    char a[100];
+    char *p = a;
     printFolder("/Users/zyf/Documents", 0);
+    
+    chdir("/Users/zyf/Documents");
+    getcwd(p, 100); //打印出当前路径
+    printf("%s\n", p);
 }
 
 void printFolder(char* folderName, int level) {
