@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EA5D3F420EE2EF5005C10EA /* mixed_case.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA5D3F220EE2EF5005C10EA /* mixed_case.c */; };
+		0E3C04A820EF3B8E00E5B7B6 /* process_test1.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E3C04A620EF3B8E00E5B7B6 /* process_test1.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E3C04A620EF3B8E00E5B7B6 /* process_test1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = process_test1.c; sourceTree = "<group>"; };
+		0E3C04A720EF3B8E00E5B7B6 /* process_test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = process_test1.h; sourceTree = "<group>"; };
 		0E662BC620E9CA430004BDCB /* os_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = os_c; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EA5D3F220EE2EF5005C10EA /* mixed_case.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mixed_case.c; sourceTree = "<group>"; };
-		0EA5D3F320EE2EF5005C10EA /* mixed_case.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mixed_case.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3C04A520EF1B7300E5B7B6 /* process_test1 */ = {
+			isa = PBXGroup;
+			children = (
+				0E3C04A620EF3B8E00E5B7B6 /* process_test1.c */,
+				0E3C04A720EF3B8E00E5B7B6 /* process_test1.h */,
+			);
+			path = process_test1;
+			sourceTree = "<group>";
+		};
 		0E662BBD20E9CA430004BDCB = {
 			isa = PBXGroup;
 			children = (
@@ -58,18 +67,9 @@
 		0E662BC820E9CA430004BDCB /* os_c */ = {
 			isa = PBXGroup;
 			children = (
-				0EA5D3F120EE2EB0005C10EA /* mixed_case */,
+				0E3C04A520EF1B7300E5B7B6 /* process_test1 */,
 			);
 			path = os_c;
-			sourceTree = "<group>";
-		};
-		0EA5D3F120EE2EB0005C10EA /* mixed_case */ = {
-			isa = PBXGroup;
-			children = (
-				0EA5D3F220EE2EF5005C10EA /* mixed_case.c */,
-				0EA5D3F320EE2EF5005C10EA /* mixed_case.h */,
-			);
-			path = mixed_case;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EA5D3F420EE2EF5005C10EA /* mixed_case.c in Sources */,
+				0E3C04A820EF3B8E00E5B7B6 /* process_test1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
