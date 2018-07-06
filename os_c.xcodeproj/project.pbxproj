@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E8FFB8820ECAEEE00B421B0 /* stdio_use.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E8FFB8620ECAEEE00B421B0 /* stdio_use.c */; };
+		0EA5D3F420EE2EF5005C10EA /* mixed_case.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA5D3F220EE2EF5005C10EA /* mixed_case.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		0E662BC620E9CA430004BDCB /* os_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = os_c; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E8FFB8620ECAEEE00B421B0 /* stdio_use.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stdio_use.c; sourceTree = "<group>"; };
-		0E8FFB8720ECAEEE00B421B0 /* stdio_use.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stdio_use.h; sourceTree = "<group>"; };
+		0EA5D3F220EE2EF5005C10EA /* mixed_case.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mixed_case.c; sourceTree = "<group>"; };
+		0EA5D3F320EE2EF5005C10EA /* mixed_case.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mixed_case.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,18 +58,18 @@
 		0E662BC820E9CA430004BDCB /* os_c */ = {
 			isa = PBXGroup;
 			children = (
-				0E8FFB8520ECAEBB00B421B0 /* stdio_lib */,
+				0EA5D3F120EE2EB0005C10EA /* mixed_case */,
 			);
 			path = os_c;
 			sourceTree = "<group>";
 		};
-		0E8FFB8520ECAEBB00B421B0 /* stdio_lib */ = {
+		0EA5D3F120EE2EB0005C10EA /* mixed_case */ = {
 			isa = PBXGroup;
 			children = (
-				0E8FFB8620ECAEEE00B421B0 /* stdio_use.c */,
-				0E8FFB8720ECAEEE00B421B0 /* stdio_use.h */,
+				0EA5D3F220EE2EF5005C10EA /* mixed_case.c */,
+				0EA5D3F320EE2EF5005C10EA /* mixed_case.h */,
 			);
-			path = stdio_lib;
+			path = mixed_case;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E8FFB8820ECAEEE00B421B0 /* stdio_use.c in Sources */,
+				0EA5D3F420EE2EF5005C10EA /* mixed_case.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
