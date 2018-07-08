@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E3C04A820EF3B8E00E5B7B6 /* process_test1.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E3C04A620EF3B8E00E5B7B6 /* process_test1.c */; };
+		0E2D40B520F0B26E0085430C /* process_test2.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E2D40B320F0B26E0085430C /* process_test2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E3C04A620EF3B8E00E5B7B6 /* process_test1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = process_test1.c; sourceTree = "<group>"; };
-		0E3C04A720EF3B8E00E5B7B6 /* process_test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = process_test1.h; sourceTree = "<group>"; };
+		0E2D40B320F0B26E0085430C /* process_test2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = process_test2.c; sourceTree = "<group>"; };
+		0E2D40B420F0B26E0085430C /* process_test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = process_test2.h; sourceTree = "<group>"; };
 		0E662BC620E9CA430004BDCB /* os_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = os_c; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -39,13 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E3C04A520EF1B7300E5B7B6 /* process_test1 */ = {
+		0E2D40B220F0B2510085430C /* process_test2 */ = {
 			isa = PBXGroup;
 			children = (
-				0E3C04A620EF3B8E00E5B7B6 /* process_test1.c */,
-				0E3C04A720EF3B8E00E5B7B6 /* process_test1.h */,
+				0E2D40B320F0B26E0085430C /* process_test2.c */,
+				0E2D40B420F0B26E0085430C /* process_test2.h */,
 			);
-			path = process_test1;
+			path = process_test2;
 			sourceTree = "<group>";
 		};
 		0E662BBD20E9CA430004BDCB = {
@@ -67,7 +67,7 @@
 		0E662BC820E9CA430004BDCB /* os_c */ = {
 			isa = PBXGroup;
 			children = (
-				0E3C04A520EF1B7300E5B7B6 /* process_test1 */,
+				0E2D40B220F0B2510085430C /* process_test2 */,
 			);
 			path = os_c;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E3C04A820EF3B8E00E5B7B6 /* process_test1.c in Sources */,
+				0E2D40B520F0B26E0085430C /* process_test2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
