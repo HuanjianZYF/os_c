@@ -6,13 +6,6 @@
 	objectVersion = 48;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		0E3690BA20F6FD4F009F92CF /* mysignal.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E3690B820F6FD4F009F92CF /* mysignal.c */; };
-		0EA13EA820F83D8A0038D60E /* mysignal2.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA13EA720F83D8A0038D60E /* mysignal2.c */; };
-		0EA13EAA20F841150038D60E /* mysignal3.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA13EA920F841150038D60E /* mysignal3.c */; };
-		0EC9DD7A20F9C19E00465D80 /* mysignal4.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9DD7920F9C19E00465D80 /* mysignal4.c */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		0E662BC420E9CA430004BDCB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -26,12 +19,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E3690B820F6FD4F009F92CF /* mysignal.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mysignal.c; sourceTree = "<group>"; };
-		0E3690B920F6FD4F009F92CF /* mysignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mysignal.h; sourceTree = "<group>"; };
 		0E662BC620E9CA430004BDCB /* os_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = os_c; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EA13EA720F83D8A0038D60E /* mysignal2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mysignal2.c; sourceTree = "<group>"; };
-		0EA13EA920F841150038D60E /* mysignal3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mysignal3.c; sourceTree = "<group>"; };
-		0EC9DD7920F9C19E00465D80 /* mysignal4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mysignal4.c; sourceTree = "<group>"; };
+		0EC9DD7D20FAD7F700465D80 /* pthread_use.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pthread_use.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,18 +34,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E3690B720F6FD38009F92CF /* signal */ = {
-			isa = PBXGroup;
-			children = (
-				0E3690B820F6FD4F009F92CF /* mysignal.c */,
-				0E3690B920F6FD4F009F92CF /* mysignal.h */,
-				0EA13EA720F83D8A0038D60E /* mysignal2.c */,
-				0EA13EA920F841150038D60E /* mysignal3.c */,
-				0EC9DD7920F9C19E00465D80 /* mysignal4.c */,
-			);
-			path = signal;
-			sourceTree = "<group>";
-		};
 		0E662BBD20E9CA430004BDCB = {
 			isa = PBXGroup;
 			children = (
@@ -76,9 +53,17 @@
 		0E662BC820E9CA430004BDCB /* os_c */ = {
 			isa = PBXGroup;
 			children = (
-				0E3690B720F6FD38009F92CF /* signal */,
+				0EC9DD7B20FAD7D400465D80 /* pthread_use */,
 			);
 			path = os_c;
+			sourceTree = "<group>";
+		};
+		0EC9DD7B20FAD7D400465D80 /* pthread_use */ = {
+			isa = PBXGroup;
+			children = (
+				0EC9DD7D20FAD7F700465D80 /* pthread_use.h */,
+			);
+			path = pthread_use;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,10 +123,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EC9DD7A20F9C19E00465D80 /* mysignal4.c in Sources */,
-				0EA13EA820F83D8A0038D60E /* mysignal2.c in Sources */,
-				0EA13EAA20F841150038D60E /* mysignal3.c in Sources */,
-				0E3690BA20F6FD4F009F92CF /* mysignal.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
