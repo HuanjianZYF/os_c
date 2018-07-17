@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		0E662BC620E9CA430004BDCB /* os_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = os_c; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EC9DD7D20FAD7F700465D80 /* pthread_use.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pthread_use.h; sourceTree = "<group>"; };
+		0E85712B20FC97FB00FC54A3 /* thread_property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread_property.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +53,17 @@
 		0E662BC820E9CA430004BDCB /* os_c */ = {
 			isa = PBXGroup;
 			children = (
-				0EC9DD7B20FAD7D400465D80 /* pthread_use */,
+				0E85712920FC97C400FC54A3 /* thread_property */,
 			);
 			path = os_c;
 			sourceTree = "<group>";
 		};
-		0EC9DD7B20FAD7D400465D80 /* pthread_use */ = {
+		0E85712920FC97C400FC54A3 /* thread_property */ = {
 			isa = PBXGroup;
 			children = (
-				0EC9DD7D20FAD7F700465D80 /* pthread_use.h */,
+				0E85712B20FC97FB00FC54A3 /* thread_property.h */,
 			);
-			path = pthread_use;
+			path = thread_property;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
