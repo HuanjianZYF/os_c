@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E81EA6021001C8700F61069 /* mmapzz.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E81EA5E21001C8700F61069 /* mmapzz.c */; };
+		0EB343B121042CEE00C50E35 /* share_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EB343B021042CEE00C50E35 /* share_memory.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		0E662BC620E9CA430004BDCB /* os_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = os_c; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E81EA5E21001C8700F61069 /* mmapzz.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mmapzz.c; sourceTree = "<group>"; };
-		0E81EA5F21001C8700F61069 /* mmapzz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmapzz.h; sourceTree = "<group>"; };
+		0EB343AC2104150E00C50E35 /* ipc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ipc.h; sourceTree = "<group>"; };
+		0EB343B021042CEE00C50E35 /* share_memory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = share_memory.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,18 +58,18 @@
 		0E662BC820E9CA430004BDCB /* os_c */ = {
 			isa = PBXGroup;
 			children = (
-				0EF12B0120FDDD9700BB993D /* advancedIO */,
+				0EB343AA210414D400C50E35 /* sem_and_shm */,
 			);
 			path = os_c;
 			sourceTree = "<group>";
 		};
-		0EF12B0120FDDD9700BB993D /* advancedIO */ = {
+		0EB343AA210414D400C50E35 /* sem_and_shm */ = {
 			isa = PBXGroup;
 			children = (
-				0E81EA5E21001C8700F61069 /* mmapzz.c */,
-				0E81EA5F21001C8700F61069 /* mmapzz.h */,
+				0EB343AC2104150E00C50E35 /* ipc.h */,
+				0EB343B021042CEE00C50E35 /* share_memory.c */,
 			);
-			path = advancedIO;
+			path = sem_and_shm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E81EA6021001C8700F61069 /* mmapzz.c in Sources */,
+				0EB343B121042CEE00C50E35 /* share_memory.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
