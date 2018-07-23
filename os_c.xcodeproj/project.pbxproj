@@ -6,10 +6,6 @@
 	objectVersion = 48;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		0EB343B121042CEE00C50E35 /* share_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EB343B021042CEE00C50E35 /* share_memory.c */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		0E662BC420E9CA430004BDCB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,8 +20,7 @@
 
 /* Begin PBXFileReference section */
 		0E662BC620E9CA430004BDCB /* os_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = os_c; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EB343AC2104150E00C50E35 /* ipc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ipc.h; sourceTree = "<group>"; };
-		0EB343B021042CEE00C50E35 /* share_memory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = share_memory.c; sourceTree = "<group>"; };
+		0E8406FE2104BAD5000F2A28 /* socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,18 +53,17 @@
 		0E662BC820E9CA430004BDCB /* os_c */ = {
 			isa = PBXGroup;
 			children = (
-				0EB343AA210414D400C50E35 /* sem_and_shm */,
+				0E8406FC2104BAB5000F2A28 /* socket */,
 			);
 			path = os_c;
 			sourceTree = "<group>";
 		};
-		0EB343AA210414D400C50E35 /* sem_and_shm */ = {
+		0E8406FC2104BAB5000F2A28 /* socket */ = {
 			isa = PBXGroup;
 			children = (
-				0EB343AC2104150E00C50E35 /* ipc.h */,
-				0EB343B021042CEE00C50E35 /* share_memory.c */,
+				0E8406FE2104BAD5000F2A28 /* socket.h */,
 			);
-			path = sem_and_shm;
+			path = socket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +123,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EB343B121042CEE00C50E35 /* share_memory.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
